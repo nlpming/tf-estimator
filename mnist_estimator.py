@@ -3,6 +3,11 @@ import tensorflow as tf
 import numpy as np
 
 from tensorflow.examples.tutorials.mnist import input_data
+
+# 设置日志级别
+tf.logging.set_verbosity(tf.logging.INFO)
+
+# 读取数据
 mnist = input_data.read_data_sets('MNIST_data')
 
 def input(dataset):
